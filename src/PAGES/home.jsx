@@ -1,67 +1,67 @@
 import React from "react";
 import '../CSS/home.css';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Element, Link } from "react-scroll";
 
 const Home = () => {
 
-  const carouselText = [
-    { text: "Freelancer", color: "red" },
-    { text: "UI Designer", color: "orange" },
-    { text: "Fullstack Developer", color: "yellow" }
-  ];
+  // const carouselText = [
+  //   { text: "Freelancer", color: "red" },
+  //   { text: "UI Designer", color: "orange" },
+  //   { text: "Fullstack Developer", color: "yellow" }
+  // ];  
 
-  useEffect(() => {
-    const featureTextRef = document.getElementById("feature-text");
-    Home(carouselText, featureTextRef);
+  // useEffect(() => {
+  //   const featureTextRef = document.getElementById("feature-text");
+  //   Home(carouselText, featureTextRef);
 
-    return () => {
+  //   return () => {
 
-    };
-  }, []);
+  //   };
+  // }, []);
 
-  async function typeSentence(sentence, eleRef, delay = 100) {
-    const letters = sentence.split("");
-    let i = 0;
-    while (i < letters.length) {
-      await waitForMs(delay);
-      eleRef.innerHTML += letters[i];
-      i++;
-    }
-    return;
-  }
+  // async function typeSentence(sentence, eleRef, delay = 100) {
+  //   const letters = sentence.split("");
+  //   let i = 0;
+  //   while (i < letters.length) {
+  //     await waitForMs(delay);
+  //     eleRef.innerHTML += letters[i];
+  //     i++;
+  //   }
+  //   return;
+  // }
 
-  async function deleteSentence(eleRef) {
-    const sentence = eleRef.innerHTML;
-    const letters = sentence.split("");
-    let i = 0;
-    while (letters.length > 0) {
-      await waitForMs(100);
-      letters.pop();
-      eleRef.innerHTML = letters.join("");
-    }
-  }
+  // async function deleteSentence(eleRef) {
+  //   const sentence = eleRef.innerHTML;
+  //   const letters = sentence.split("");
+  //   let i = 0;
+  //   while (letters.length > 0) {
+  //     await waitForMs(100);
+  //     letters.pop();
+  //     eleRef.innerHTML = letters.join("");
+  //   }
+  // }
 
-  async function Home(carouselList, eleRef) {
-    let i = 0;
-    while (true) {
-      updateFontColor(eleRef, carouselList[i].color);
-      await typeSentence(carouselList[i].text, eleRef);
-      await waitForMs(1500);
-      await deleteSentence(eleRef);
-      await waitForMs(500);
-      i++;
-      if (i >= carouselList.length) { i = 0; }
-    }
-  }
+  // async function Home(carouselList, eleRef) {
+  //   let i = 0;
+  //   while (true) {
+  //     updateFontColor(eleRef, carouselList[i].color);
+  //     await typeSentence(carouselList[i].text, eleRef);
+  //     await waitForMs(1500);
+  //     await deleteSentence(eleRef);
+  //     await waitForMs(500);
+  //     i++;
+  //     if (i >= carouselList.length) { i = 0; }
+  //   }
+  // }
 
-  function updateFontColor(eleRef, color) {
-    eleRef.style.color = color;
-  }
+  // function updateFontColor(eleRef, color) {
+  //   eleRef.style.color = color;
+  // }
 
-  function waitForMs(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
+  // function waitForMs(ms) {
+  //   return new Promise(resolve => setTimeout(resolve, ms));
+  // }
 
   return (
     <Element name="home">
@@ -95,10 +95,10 @@ const Home = () => {
 
         <div class="icon-container">
           <div class="home-icon">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="mail" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.github.com/Abinex3" target="_blank" rel="git" className="icon-link"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="insta" className="icon-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30" target="_blank" rel="linkedin" className="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="norefferrer" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 
