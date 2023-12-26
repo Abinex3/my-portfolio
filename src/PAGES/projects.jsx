@@ -4,8 +4,6 @@ import thumb from '../assets/portfolioProject.jpg';
 import thumb1 from '../assets/react-project.jpg';
 import thumb2 from '../assets/calculator-project.jpg';
 import { Element } from "react-scroll";
-// import { Link } from "react-router-dom";
-
 
 const Projects = () => {
 
@@ -36,14 +34,14 @@ const Projects = () => {
                     </div>
 
                     <div className="project-thumb">
-                        <img src={thumb} className="folio-thumb"></img>
+                        <img src={thumb} alt="thumb" className="folio-thumb"></img>
                     </div>
 
                 </div>
 
                 <div className="project-content">
                     <div className="project-thumb">
-                        <img src={thumb1} className="folio-thumb"></img>
+                        <img src={thumb1} alt="thumb1" className="folio-thumb"></img>
                     </div>
 
                     <div className="heading-container">
@@ -84,7 +82,7 @@ const Projects = () => {
                     </div>
 
                     <div className="project-thumb">
-                        <img src={thumb2} className="folio-thumb"></img>
+                        <img src={thumb2} alt="thumb2" className="folio-thumb"></img>
                     </div>
 
                 </div>

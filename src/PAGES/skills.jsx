@@ -25,7 +25,7 @@ const Skills = () => {
             <div className="svg-container">
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={html} className="skill-logo"></img>
+                    <img src={html} alt="html" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -40,7 +40,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={css} className="skill-logo"></img>
+                    <img src={css} alt="css" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -55,7 +55,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={bootstrap} className="skill-logo"></img>
+                    <img src={bootstrap} alt="boots" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -70,7 +70,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={js} className="skill-logo"></img>
+                    <img src={js}  alt="js" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -85,7 +85,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={react} className="skill-logo"></img>
+                    <img src={react} alt="react" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -100,7 +100,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={redux} className="skill-logo"></img>
+                    <img src={redux} alt="redux" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -115,7 +115,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={node} className="skill-logo"></img>
+                    <img src={node} alt="node" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -130,7 +130,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={md} className="skill-logo"></img>
+                    <img src={md} alt="md" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -145,7 +145,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={git} className="skill-logo"></img>
+                    <img src={git} alt="git" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">
@@ -160,7 +160,7 @@ const Skills = () => {
 
             <div className="skill-svg">
                 <div className="skill-html">
-                    <img src={ex} className="skill-logo"></img>
+                    <img src={ex} alt="ex" className="skill-logo"></img>
                 </div>
 
                 <div className="skills">

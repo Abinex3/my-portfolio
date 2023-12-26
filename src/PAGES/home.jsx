@@ -95,10 +95,10 @@ const Home = () => {
 
         <div class="icon-container">
           <div class="home-icon">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.github.com/Abinex3" target="_blank" className="icon-link"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" className="icon-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30" target="_blank" className="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="mail" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.github.com/Abinex3" target="_blank" rel="git" className="icon-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="insta" className="icon-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30" target="_blank" rel="linkedin" className="icon-link"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 
