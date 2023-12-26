@@ -9,7 +9,6 @@ import git from '../assets/git.svg';
 import node from '../assets/nodejs.svg';
 import react from '../assets/react.svg';
 import redux from '../assets/redux.svg';
-import wae from '../assets/wave.png';
 import bootstrap from '../assets/bootstrap.svg';
 import { Element } from "react-scroll";
 
