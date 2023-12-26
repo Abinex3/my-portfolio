@@ -1,0 +1,16 @@
+.inside-buttons {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.inside-thumb {
+    border: 1px solid black;
+}
+
+.nav-pic {
+    border: 1px solid blue;
+    width: 30%;
+    height: 50vh;
+}

@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+#home-container {
+  background-image: url(../../src/assets/baner.png);
+  background-color: #000033;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  padding: 0px 50px 0px 180px;
+  height: 100vh;
+  z-index: 10;
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-content {
+ 
+  width: 600px;
+  margin-left: 50px;
+
+}
+
+.greeting {
+  color: #888888;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 25px;
+}
+
+.home-myName {
+
+  color: #bfc0c7;
+  background-image: -webkit-linear-gradient(315deg, #bfc0c7 30%, #568fe3 19%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-family: 'Space Grotesk', sans-serif;
+  height: 90px;
+
+}
+
+.name-desc {
+  font-family: 'Poppins', sans-serif;
+  color: #888888;
+}
+
+.typing-container {
+  font-size: 20px;
+}
+
+.home-logo {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+}
+
+.logo {
+  width: 20px;
+}
+
+.text-one {
+  color: #fff;
+}
+
+.text-two {
+  color: white;
+}
+
+.text-two:before {
+  content: " ";
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  height: 6%;
+  width: 13%;
+  background-image: url(../../src/assets/bg-prg.jpg);
+  z-index: 3;
+  border-left: 2px solid white;
+
+}
+
+
+
+.sentence {
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#feature-text {
+  --caret: currentcolor;
+  color: white;
+  font-family: 'VT323', monospace;
+
+}
+
+
+
+.mouse-icon {
+
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  height: 50px;
+  width: 30px;
+  margin-left: -17px;
+  display: block;
+  z-index: 10;
+}
+
+.wheel {
+  width: 5px;
+  height: 15px;
+  position: relative;
+  left: 12px;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: white;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(3px);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+
+.btn {
+  background-color: #568fe3;
+  border: 1px solid #568fe3;
+  padding: 1em 2em;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  background: none;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 20px;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #568fe3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: 0.5s, transform 0.5s, opacity 0.5s ease-in;
+}
+
+.btn::before {
+  left: -30%;
+}
+
+.btn::after {
+  right: -30%;
+}
+
+.btn:hover::after {
+  transform: scale(1);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+
+.icon-container {
+  position: relative;
+  top: 43%;
+  left: -105%;
+  transform: translate(-50%, -50%);
+}
+
+.home-icon {
+  margin: 10px 0 20px;
+}
+
+.icon-link {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #666;
+  transition: .5s;
+  margin-bottom: 15px;
+}
+
+.icon-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #568fe3;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.icon-link:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #568fe3;
+}
+
+.icon-link:hover {
+  color: #568fe3;
+  box-shadow: 0 0 5px #568fe3;
+  text-shadow: 0 0 5px #568fe3;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .greeting {
+    font-size: 20px;
+    text-align: start;
+  }
+
+  .home-myName {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .typing-container {
+    display: none;
+  }
+
+  .name-desc {
+    font-size: 13px;
+    position: relative;
+    top: -20px; 
+  }
+
+  .home-icon {
+    display: flex;
+    
+  }
+
+  .icon-link {
+    text-align: center;
+    font-size: 15px;
+    border-radius: 0;
+    background: none;
+  }
+
+  .icon-link::before {
+    background: none;
+  }
+
+  .home-content {
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    justify-content: center;
+  }
+
+  #home-container {
+    padding: 150px 0px 55px 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+  }
+
+  .icon-container {
+    position: relative;
+    top: 15%;
+    left: 50%;
+  }
+
+  .icon-link:hover::before {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+  
+  .icon-link:hover {
+    color: #568fe3;
+    box-shadow: none;
+    text-shadow: 0 0 5px #568fe3;
+  }
+  
+  .home-icon {
+    margin: 10px 0 20px;
+    justify-content: center;
+
+  }
+
+  .home-icon .fa-brands, .fa-solid {
+    font-size: 35px;
+  }
+
+  .wave-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+}

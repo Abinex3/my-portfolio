@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+#about-container {
+  padding: 100px 180px 100px 180px;
+}
+
+.about-role {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.about-role .fa-solid {
+  color: #568fe3;
+  position: relative;
+  top: -10px;
+}
+
+.about {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Share Tech Mono', monospace;
+  color: #000333;
+}
+
+.about-myself {
+  font-family: 'Share Tech Mono', monospace;
+  color: #000033;
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+
+.details {
+  display: flex;
+  margin-top: 70px;
+}
+
+.profile {
+  width: 50%;
+}
+
+.education {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.clge-logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.clge-flex {
+  display: flex;
+}
+
+.about-heading {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #000033;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-details {
+  font-family: 'Catamaran', sans-serif;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #484747;
+}
+
+.ug .fa-solid {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.education-container {
+  background-color: #000333;
+  color: #fff;
+  padding: 20px;
+  height: 19vh;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.ug {
+  display: flex;
+}
+
+.degree {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+}
+
+.degree-year {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #888888;
+}
+
+.logo-name {
+  border: 1px solid black;
+}
+
+.about-heading .about-details {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.clge-name {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 20px;
+}
+
+.clge {
+  margin-top: 10px;
+
+}
+
+.clge-location {
+  font-size: 13px;
+  color: #888888;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cv-button {
+  background-color: transparent;
+}
+
+.cv-button .about-cvButton {
+  height: fit-content;
+  padding: 10px 40px;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Share Tech Mono', monospace;
+  border: 0;
+  border: 2px solid #2772db;
+  color: #000333;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.cv-button .about-cvButton:first-child {
+  overflow: hidden;
+}
+
+.cv-button .about-cvButton:first-child::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -75%;
+  width: 150%;
+  height: 100%;
+  background-color: #000333;
+  opacity: .2;
+  z-index: -1;
+  transform-origin: bottom center;
+  transform: rotate(-35deg);
+  transition: all 0.3s;
+}
+
+.cv-button .about-cvButton:first-child:hover::before {
+  top: 100%;
+  left: 50%;
+}
+
+
+.hire-button {
+
+  background-color: transparent;
+
+}
+
+.hire-button .about-hireMe {
+  height: fit-content;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: transparent;
+  border: 0;
+  border: 2px solid #003;
+  color: #000333;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.hire-button .about-hireMe:last-child {
+  border-color: #2772db;
+}
+
+.hire-button .about-hireMe:last-child:hover {
+  border-color: #2772db;
+}
+
+.hire-button .about-hireMe:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000333;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s;
+}
+
+.hire-button .about-hireMe:last-child:hover::before {
+  width: calc(100% + 25px);
+  height: calc(100% + 25px);
+  border: 1px solid transparent;
+}
+
+.hire-button .about-hireMe:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.hire-button .about-hireMe:last-child:hover::after {
+  box-shadow: 0px 0px 15px #2772db inset;
+}
+
+@media only screen and (max-width: 450px) {
+  #about-container {
+    padding: 50px 20px 100px 20px;
+  }
+
+  .about {
+    font-size: 25px;
+  }
+
+  .about-myself {
+    font-size: 25px;
+  }
+
+  .about-role {
+      font-size: 20px;
+  }
+
+  .about-role .fa-solid {
+    font-size: 10px;
+  }
+
+  .details {
+    display: inline;
+    /* margin-top: 70px; */
+  }
+
+  .profile {
+    width: 100%;
+    
+  }
+
+  .about-details {
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  .education {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .education-container {
+  
+    padding: 20px;
+    height: 22vh;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    /* width: 400px; */
+  }
+
+  .clge-logo {
+    width: 50px;
+    height: 8vh;
+  }
+
+  .clge-name {
+    font-size: 18px;
+  }
+
+  .about-buttons {
+    display: block;
+  }
+
+  .about-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cv-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hire-button {
+    display: none;
+  }
+}

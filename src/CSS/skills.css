@@ -1,0 +1,141 @@
+#skills-container {
+    padding: 100px 180px 100px 180px;
+    background-image: url(../assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.svg-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skill-lang {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 0px 10px 5px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.skill-title {
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about-skill{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #888888;
+}
+
+.about-skill .fa-solid {
+    color: #568fe3;
+    position: relative;
+    top: -10px;
+}
+
+.skill-logo {
+    width: 60px;
+}
+
+.skill-svg {
+    width: 49%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #888888;
+    border-radius: 10px;
+}
+
+.skill-per {
+    height: 10px;
+    background-color: #568fe3;
+    border-radius: 10px;
+    position: relative;
+    animation: animate 2.5s 1;
+}
+
+.skills {
+    width: 80%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000333;
+    top: -18px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+    @keyframes animate {
+        from {
+            width :0;
+        }
+        to {
+            width  : 100%;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+    #skills-container {
+        padding: 50px 20px 50px 20px;
+    }
+
+    .skill-title {
+        font-size: 25px;
+    }
+
+    .about-skill {
+        font-size: 20px;
+    }
+
+    .about-skill .fa-solid {
+        font-size: 10px;
+    }
+
+    .svg-container {
+        display: block;
+    }
+    
+    .skill-svg {
+        width: 100%;
+    }
+
+    .skill-logo {
+        width: 40px;
+    }
+
+    .skill-lang {
+        font-size: 15px;  
+    }
+    }

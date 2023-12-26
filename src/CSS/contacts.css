@@ -1,0 +1,242 @@
+#contact-container {
+    background-color: #000033;
+    height: 100vh;
+    padding: 100px 180px 0px 180px;
+}
+
+.contact-quote {
+    /* font-family: 'Share Tech Mono', monospace; */
+    color: #FFF;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-heading {
+    font-family: 'Share Tech Mono', monospace;
+    color: #888888;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact-skill {
+    color: #FFF;
+    margin-top: 15px;
+    /* font-size: 40px; */
+    /* font-weight: bolder; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.details-one{
+   margin-top: 50px;
+    /* border: 1px solid red; */
+    height: 50vh;
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    /* border: 1px solid wheat; */
+}
+
+/* form */
+ 
+  .form {
+    width: 50%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+  }
+  
+  .form input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  .form label {
+    position: absolute;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+  }
+  .form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #fce38a;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  .form input:focus {
+    outline: none;
+  }
+  .form input:focus + .label-name .content-name,
+  .form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: #fce38a;
+  }
+  .form input:focus + .label-name::after,
+  .form input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
+  
+
+  /* textarea */
+
+  textarea:focus + .label-name .content-name,
+  textarea:valid + .label-name .content-name {
+   transform: translateY(-150%);
+   font-size: 14px;
+   left: 0px;
+   color: #fce38a;
+ }
+ 
+ textarea:focus + .label-name::after,
+ textarea:valid + .label-name::after {
+   transform: translateX(0%);
+ } 
+ 
+ textarea:focus {
+   outline: none;
+ }
+ 
+ .form label::after {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   border-bottom: 3px solid #fce38a;
+   transform: translateX(-100%);
+   transition: all 0.3s ease;
+ }
+ 
+ .form label {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+   border-bottom: 1px solid white;
+ }
+ 
+ 
+ .form textarea {
+   width: 500px;
+   height: 100%;
+   color: #fff;
+   padding-top: 20px;
+   border: none;
+   background-color: transparent;
+   /* border: 1px solid red; */
+ }
+ 
+ 
+ textarea {
+   width: 30%;
+   position: relative;
+   height: 60px;
+   overflow: hidden;
+ }
+ 
+
+ /* button */
+
+ 
+ .btn-submit{
+    background-color: #568fe3;
+    border: 1px solid #568fe3;
+    padding: 1em 2em;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 20px;
+    
+  }
+  
+  .btn-submit::before, .btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #568fe3;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transition:  0.5s, transform 0.5s, opacity 0.5s ease-in;
+  }
+  
+  .btn-submit::before {
+    left: -30%;
+  }
+  
+  .btn-submit::after {
+    right: -30%;
+  }
+  
+  .btn-submit:hover::after {
+    transform: scale(1);
+  }
+  
+  .btn-submit:active {
+    transform: translateY(2px);
+  }
+
+  @media only screen and (max-width: 450px) {
+    #contact-container {
+      padding: 50px 20px 100px 20px;
+      height: 80vh;
+    }
+
+    .contact-heading {
+      font-size: 25px;
+    }
+  
+    .contact-quote {
+      font-size: 25px;
+    }
+
+    .form {
+      width: 100%;
+    }
+
+    .btn-submit {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+  
+  
