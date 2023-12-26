@@ -8,7 +8,6 @@ import Projects from './PAGES/projects';
 import Services from './PAGES/services';
 import Contacts from './PAGES/contacts';
 import Footer from './PAGES/footer';
-// import { Route, Router } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,9 +22,6 @@ function App() {
       <Contacts></Contacts>
       <Footer></Footer>
       
-      {/* <Router> */}
-         {/* <Route pathname="projectCollections" element={<projectCollections></projectCollections>}></Route> */}
-      {/* </Router> */}
     </div>
   );
 }
