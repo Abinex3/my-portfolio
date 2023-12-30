@@ -1,6 +1,5 @@
 import React from "react";
 import '../CSS/aboutMe.css';
-// import resume from '/Abinesh-resume.pdf
 import { Element } from "react-scroll";
 
 const Aboutme = () => {
@@ -71,7 +70,7 @@ const Aboutme = () => {
 
                 <div className="about-buttons">
                     <div className="cv-button">
-                        <a href="/Abinesh-resume.pdf" target="_blank"><button className="about-cvButton">DOWNLOAD CV</button></a>
+                        <a href="/Abinesh-resume.pdf" target="blank"><button className="about-cvButton">DOWNLOAD CV</button></a>
                     </div>
 
                 </div>
