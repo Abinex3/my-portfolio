@@ -9,11 +9,13 @@ import Services from './PAGES/services';
 import Contacts from './PAGES/contacts';
 import Footer from './PAGES/footer';
 
+
 function App() {
   return (
     <div className="App">
-     
+    
        <Navbar></Navbar>
+       
        <Home></Home>
        <Aboutme></Aboutme>
        <Skills></Skills>
@@ -21,6 +23,9 @@ function App() {
       <Services></Services>
       <Contacts></Contacts>
       <Footer></Footer>
+
+      
+      
       
     </div>
   );

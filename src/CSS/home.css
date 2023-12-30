@@ -11,7 +11,6 @@
   background-repeat: repeat;
   padding: 0px 50px 0px 180px;
   height: 100vh;
-  z-index: 10;
   position: sticky;
   display: flex;
   justify-content: flex-end;
@@ -188,7 +187,7 @@
 
 .icon-container {
   position: relative;
-  top: 43%;
+  top: 20%;
   left: -105%;
   transform: translate(-50%, -50%);
 }
@@ -204,13 +203,15 @@
   height: 45px;
   text-align: center;
   line-height: 40px;
-  background: #333;
+  /* background: #333; */
   border-radius: 50%;
   font-size: 20px;
   color: #666;
   transition: .5s;
-  margin-bottom: 15px;
+  margin-bottom: px;
+
 }
+
 
 .icon-link::before {
   content: '';
@@ -220,7 +221,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #568fe3;
+  /* background: #568fe3; */
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
@@ -228,13 +229,13 @@
 
 .icon-link:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #568fe3;
+  box-shadow: 0 0 15px none;
 }
 
 .icon-link:hover {
   color: #568fe3;
-  box-shadow: 0 0 5px #568fe3;
-  text-shadow: 0 0 5px #568fe3;
+  box-shadow: 0 0 5px none;
+  text-shadow: 0 0 5px none;
 }
 
 .wave-bottom {

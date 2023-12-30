@@ -1,8 +1,8 @@
 #footer-container {
     background-color: black;
-    height: 39vh;
+    height: 36vh;
     color: whitesmoke;
-    padding: 20px 180px 0px 180px;
+    padding: 10px 180px 30px 180px;
 }
 
 .address {
@@ -44,6 +44,15 @@ hr {
 .footer-des {
     text-align: center;
     margin-top: 25px;
+}
+
+.footer-icon{
+    color: #888888;
+}
+
+.footer-icon:hover {
+
+    color: white;
 }
 
 @media only screen and (max-width: 450px) {

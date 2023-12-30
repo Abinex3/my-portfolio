@@ -1,6 +1,5 @@
 import React from "react";
 import '../CSS/home.css';
-// import { useEffect } from 'react';
 import { Element, Link } from "react-scroll";
 
 const Home = () => {
@@ -51,7 +50,7 @@ const Home = () => {
   //     await deleteSentence(eleRef);
   //     await waitForMs(500);
   //     i++;
-  //     if (i >= carouselList.length) { i = 0; }
+  //     if (i >= carouselList.length) { i = 1; }
   //   }
   // }
 
@@ -76,13 +75,13 @@ const Home = () => {
             <p className="name-desc">Expertise in building professional web applications!</p>
           </div>
 
-          <div className="typing-container">
+          {/* <div className="typing-container">
             <span id="sentence" className="sentence">And </span>
             <span id="feature-text"></span>
             <span className="input-cursor"></span>
-          </div>
+          </div> */}
 
-          <div class="btn-container">
+          <div className="btn-container">
             <div>
               <Link to="about" smooth={true} duration={500}><button className="btn" >ABOUT ME</button></Link>
             </div>
@@ -93,12 +92,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div class="icon-container">
-          <div class="home-icon">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="norefferrer" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30" target="_blank" rel="norefferrer" className="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+        <div className="icon-container">
+          <div className="home-icon">
+            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="icon-link"><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="icon-link"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30/" target="_blank" className="icon-link"><i className="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 

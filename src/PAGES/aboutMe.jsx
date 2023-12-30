@@ -1,8 +1,7 @@
 import React from "react";
 import '../CSS/aboutMe.css';
-import clge from '../assets/clg-logo.png';
-import pg from '../assets/srm-pg.png';
-import { Link, Element } from "react-scroll";
+// import resume from '/Abinesh-resume.pdf
+import { Element } from "react-scroll";
 
 const Aboutme = () => {
     return (
@@ -13,7 +12,7 @@ const Aboutme = () => {
                     <div className="about-name">
                         <p className="about">&#60;about me&#62;</p>
                         <p className="about-myself">Let me introduce myself</p>
-                        <p className="about-role"><i class="fa-solid fa-quote-left"></i> Embrace the journey, cherish the moments, and live with purpose.</p>
+                        <p className="about-role"><i className="fa-solid fa-quote-left"></i> Embrace the journey, cherish the moments, and live with purpose.</p>
                     </div>
                 </div>
 
@@ -45,13 +44,12 @@ const Aboutme = () => {
 
                         <div className="education-container">
                             <div className="ug">
-                                <p className="degree">M.Sc. Information Technology<p className="degree-year">July 2023 - PRESENT</p></p>
+                                <p className="degree">M.Sc. Information Technology<span className="degree-year">July 2023 - PRESENT</span></p>
                             </div>
 
                             <div className="clge">
                                 <div className="clge-flex">
-                                    <img src={pg} alt="pg" className="clge-logo"></img>
-                                    <p className="clge-name">SRM Institute of Science and Technology <p className="clge-location">Chennai, Tamil Nadu</p></p>
+                                    <p className="clge-name">SRM Institute of Science and Technology <span className="clge-location">Chennai, Tamil Nadu</span></p>
                                 </div>
                             </div>
                         </div>
@@ -59,13 +57,12 @@ const Aboutme = () => {
                         <div className="education-container">
                             <div className="ug">
 
-                                <p className="degree">Bachelor of Information Technology<p className="degree-year">July 2020 - May 2023</p></p>
+                                <p className="degree">Bachelor of Information Technology<span className="degree-year">July 2020 - May 2023</span></p>
                             </div>
 
                             <div className="clge">
                                 <div className="clge-flex">
-                                    <img src={clge} alt="ug" className="clge-logo"></img>
-                                    <p className="clge-name">Karpagam Academy of Higher Education <p className="clge-location">Coimbatore, Tamil Nadu</p></p>
+                                    <p className="clge-name">Karpagam Academy of Higher Education <span className="clge-location">Coimbatore, Tamil Nadu</span></p>
                                 </div>
                             </div>
                         </div>
@@ -73,12 +70,8 @@ const Aboutme = () => {
                 </div>
 
                 <div className="about-buttons">
-                    <div className="hire-button">
-                        <Link to="contact" smooth={true} duration={1000} offset={100}><button className="about-hireMe">HIRE ME</button></Link>
-                    </div>
-
                     <div className="cv-button">
-                        <button className="about-cvButton">DOWNLOAD CV</button>
+                        <a href="/Abinesh-resume.pdf" target="_blank"><button className="about-cvButton">DOWNLOAD CV</button></a>
                     </div>
 
                 </div>

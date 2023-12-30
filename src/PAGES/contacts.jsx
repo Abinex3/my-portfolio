@@ -18,8 +18,8 @@ const Contacts = () => {
                         <div className="contact-details">
 
                             <div className="form">
-                                <input type="text" name="text" autocomplete="off" required />
-                                <label for="text" className="label-name">
+                                <input type="text" name="text" autoComplete="off" required />
+                                <label htmlFor="text" className="label-name">
                                     <span className="content-name">
                                         Name
                                     </span>
@@ -29,8 +29,8 @@ const Contacts = () => {
 
                         <div className="contact-details">
                             <div className="form">
-                                <input type="text" name="text" autocomplete="off" required />
-                                <label for="text" className="label-name">
+                                <input type="text" name="text" autoComplete="off" required />
+                                <label htmlFor="text" className="label-name">
                                     <span className="content-name">
                                         Email
                                     </span>
@@ -40,8 +40,8 @@ const Contacts = () => {
 
                         <div className="contact-details">
                             <div className="form">
-                                <input type="text" name="text" autocomplete="off" required />
-                                <label for="text" className="label-name">
+                                <input type="text" name="text" autoComplete="off" required />
+                                <label htmlFor="text" className="label-name">
                                     <span className="content-name">
                                         Subject
                                     </span>
@@ -52,8 +52,8 @@ const Contacts = () => {
 
                         <div className="contact-details">
                             <div className="form">
-                                <input type="text" name="text" autocomplete="off" required />
-                                <label for="text" className="label-name">
+                                <input type="text" name="text" autoComplete="off" required />
+                                <label htmlFor="text" className="label-name">
                                     <span className="content-name">
                                         Messages
                                     </span>

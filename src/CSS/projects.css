@@ -44,6 +44,15 @@
 
 .lang-container {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.project-icons .fa-brands, .fa-solid {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 
 .folio-thumb {
@@ -71,14 +80,10 @@
     margin-right: 20px;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
     font-family: 'Share Tech Mono', monospace;
 }
 
-.more-link {
-    color: white;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
 
 @media only screen and (max-width: 450px) {
     #project-container {
@@ -116,7 +121,7 @@
     
     .skill-box {
         margin-right: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         order: 2;
     }
 

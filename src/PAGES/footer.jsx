@@ -6,9 +6,11 @@ const Footer = () => {
         <div id="footer-container">
             <div className="address">
                 <p className="footer-logo">AbineshDev</p>
-            <div className="footer-navLink">
-                <li className="home-link-">Home  </li>
-                <li className="home-link-">Projects</li>
+                <div className="footer-logo">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-solid fa-envelope"></i></a>
+            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30" target="_blank"  rel="norefferrer" className="footer-icon"><i className="fa-brands fa-linkedin"></i></a>
             </div>
             </div>
             <hr/>
@@ -19,15 +21,10 @@ const Footer = () => {
                 <p className="contact">Mail : abineshmuniyasaamy@gmail.com</p>
             </div>
 
-            <div className="footer-logo">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="norefferrer" class="footer-icon"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" class="footer-icon"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30" target="_blank"  rel="norefferrer" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+           
 
             <div className="footer-name">
-                <p className="footer-des">Designed by Abinesh</p>
+                <p className="footer-des">Designed by &#10084;&#65039; Abinesh</p>
             </div>
         </div>
     )
