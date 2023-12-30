@@ -94,9 +94,9 @@ const Home = () => {
 
         <div className="icon-container">
           <div className="home-icon">
-            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="icon-link"><i className="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="icon-link"><i className="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30/" target="_blank" className="icon-link"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.github.com/Abinex3" target="blank" className="icon-link"><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="blank" className="icon-link"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30/" target="blank" className="icon-link"><i className="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 

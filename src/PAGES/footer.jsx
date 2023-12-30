@@ -7,10 +7,10 @@ const Footer = () => {
             <div className="address">
                 <p className="footer-logo">AbineshDev</p>
                 <div className="footer-logo">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-solid fa-envelope"></i></a>
-            <a href="https://www.github.com/Abinex3" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/abi_nexx/" target="_blank" rel="norefferrer" className="footer-icon"><i className="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/abinesh30" target="_blank"  rel="norefferrer" className="footer-icon"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtVcJkCwktkFnlWJBTrcJtqpxlVHZSJvrrpClkqBpXfMPgqxlVcXZwTwhhnjmNmrQxtsmsTG" target="blank" className="footer-icon"><i className="fa-solid fa-envelope"></i></a>
+            <a href="https://www.github.com/Abinex3" target="blank" className="footer-icon"><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/abi_nexx/" target="blank" className="footer-icon"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abinesh30" target="blank" className="footer-icon"><i className="fa-brands fa-linkedin"></i></a>
             </div>
             </div>
             <hr/>

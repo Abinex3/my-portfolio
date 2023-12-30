@@ -61,7 +61,7 @@ const Projects = () => {
                         </div>
 
                         <div className="project-icons">
-                           <a href="https://github.com/Abinex3/abinesh3.github.io" target="_blank"><i className="fa-brands fa-github"></i></a>
+                           <a href="https://github.com/Abinex3/abinesh3.github.io" target="blank"><i className="fa-brands fa-github"></i></a>
                             <i className="fa-solid fa-arrow-up-right-from-square"></i>
                         </div>
                     </div>
